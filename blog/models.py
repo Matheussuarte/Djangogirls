@@ -18,13 +18,5 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-class Produto(models.Model):
-    nome = models.CharField(max_length=100)
-    preço = models.DecimalField(max_digits=5, decimal_places=2)
-    descrção = models.TextField()
-
-    def __str__(self):
-        return self.nome
-
 
 # Create your models here.
